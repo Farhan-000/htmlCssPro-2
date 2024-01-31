@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Package Inquiry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/istockphoto-1502461809-170667a.webp');
+    background-size: cover;
+    background-position: center;
+    
+        }
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.navbar{
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  position: absolute;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #db4726;
+  padding: 10px 10px; 
+  border: 1px;
+  border-color: white;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+         
+        <ul class="nav-menu">
+           <li class="nav-iteams"> <a href="./index.html" class="nav-link"> HOME</a></li>
+           <li class="nav-iteams"><a href="/vocations.html" class="nav-link">VICATIONS</a></li>
+           <li class="nav-iteams"><a href="destination.html" class="nav-link">DESTINATIOM</a></li>
+           <li class="nav-iteams"><a href="/packages.html" class="nav-link">PACKAGES</a></li>
+           <Link class="nav-iteams"><a href="/About.html" class="nav-link">ABOUT</a></Link>
+        </ul>
+       <div class="hero">
+    <header>
+        <h1>Package Inquiry Form</h1>
+    </header>
+
+    <form action="submit_form.php" method="post">
+        <label for="package">Select Package:</label>
+        <select id="package" name="package">
+            <option value="package1">Package 1</option>
+            <option value="package2">Package 2</option>
+            <option value="package3">Package 3</option>
+        </select>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+    </form>
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
